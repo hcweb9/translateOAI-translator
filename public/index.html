@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--assets-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <!--favicon-->
+    <link rel="icon" href="./assets/img/translate-icon.png" type="image/png" />
+    <title>TranslateOAI</title>
+  </head>
+  <body>
+    <header class="chat__header">
+      <img
+        src="./assets/img/translate-icon.png"
+        alt="icon"
+        class="header__icon"
+      />
+      <h1 class="header__title">TranslateOAI Chat</h1>
+    </header>
+
+    <section class="chat">
+      <div class="chat__messages">
+        <!--Load messages-->
+      </div>
+
+      <div class="chat__input-group">
+        <input
+          type="text"
+          id="inputText"
+          class="chat__input"
+          placeholder="What would you like to translate?..."
+        />
+
+        <div class="chat__inputs">
+          <select name="Languages" class="chat__select" id="targetLang">
+            <option value="spanish">Spanish</option>
+            <option value="english">English</option>
+            <option value="italian">Italian</option>
+            <option value="french">French</option>
+            <option value="lithuanian">Lithuanian</option>
+          </select>
+
+          <button class="chat__button" id="translateButton">Translate</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

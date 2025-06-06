@@ -1,0 +1,23 @@
+{
+  "name": "translateoai",
+  "version": "1.0.0",
+  "description": "translation project using JavaScript and openAI API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "serve": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hernan casaoliva",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "openai": "^4.91.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
