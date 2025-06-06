@@ -62,10 +62,6 @@ app.post("/api/translate", async (req, res) => {
     return res.status(500).json({ error: "Error while translating" });
   }
 
-  /* return res.status(200).json({
-        message: "Hello i am a node path",
-        content: req.body
-    });*/
 });
 
 //Back-end service
