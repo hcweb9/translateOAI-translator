@@ -1,5 +1,6 @@
 let translateButton = document.querySelector("#translateButton");
 
+
 translateButton.addEventListener("click", async () => {
   //Value that will be translated
   let inputText = document.querySelector("#inputText");
@@ -52,4 +53,16 @@ translateButton.addEventListener("click", async () => {
   //Empty the input 'type text'
 
   inputText.value = "";
+
+
 });
+
+
+
+  //send message with enter key
+  inputText.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+     translateButton.click();
+    }
+  });
